@@ -25,8 +25,7 @@ const connectionParams={
     
       
 }
-
-mongoose.connect('mongodb+srv://danishriazprogramer:4mjpL2GyHwcWKwQf@cluster0.fzjs5cn.mongodb.net/?retryWrites=true&w=majority/nodejsapp',connectionParams)
+mongoose.connect("mongodb+srv://danishriazprogramer:EzxD4HpMxJwaDW5o@cluster0.fzjs5cn.mongodb.net/test",connectionParams)
 
   .then(() => console.log('Connected!'));
 

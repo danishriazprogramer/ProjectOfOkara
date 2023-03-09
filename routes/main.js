@@ -28,13 +28,13 @@ routes.get("/register",(req,resp)=>{
 
 
 
-routes.get("/login",(req,resp)=>{
+routes.get("/login" ,(req,resp)=>{
   resp.render("login")
  
 })
 
 
-routes.get("/index", auth , async (req, resp)=>{
+routes.get("/index" ,auth, async (req, resp)=>{
 
   let userList=await user.find();
                
@@ -83,7 +83,7 @@ routes.post("/register", async(req,resp)=>{
 
 //login api
 
- routes.post("/login", async(req,resp)=>{
+ routes.post("/login",  async(req,resp)=>{
    try{
 
     console.log("get coocies", req.cookies.JsonWEbToken)
